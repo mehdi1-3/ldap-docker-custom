@@ -98,7 +98,7 @@ services:
       - "ROOT_DN_PW=ldap_rootdn_pw"
       - "ROOT_DN=cn=admin,dc=example,dc=com"
       - "SUFFIX=dc=example,dc=com"
-      #- "LDAP_URIS=''"
+      #- "LDAP_URIS="
       - "LDAPS_URIS=ldaps://ldap-server/"
       - "CERT=/certificates/cert.pem"
       - "PRIVKEY=/certificates/privkey.pem"

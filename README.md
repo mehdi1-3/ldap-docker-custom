@@ -93,7 +93,7 @@ version: '3'
 services: 
 
   ldap-server:
-    build: './'
+    image: 'jumpaku/ldap-docker'
     environment:
       - "ROOT_DN_PW=ldap_rootdn_pw"
       - "ROOT_DN=cn=admin,dc=example,dc=com"
@@ -108,7 +108,7 @@ services:
       - './certificates:/certificates'
 
   ldap-client:
-    build: './'
+    image: 'jumpaku/ldap-docker'
     # Set TLS_REQCERT never, to use a self signed cetificate. Be careful spelling.
     command: ["ash", "-c", "echo 'TLS_REQCERT never' > /etc/openldap/ldap.conf; ash"]
     environment:

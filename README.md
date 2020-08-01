@@ -118,7 +118,7 @@ services:
       - "LDAP_SERVER_URI=ldaps://ldap-server/"
 ```
 
-### Try an ldap operation in the LDAP server
+### Try an LDAP operation in the LDAP server
 
 Run the LDAP server as follows:
 ```sh
@@ -135,7 +135,7 @@ Execute slapcat to display entries as follows:
 slapcat
 ```
 
-### Try ldap operations in the LDAP client
+### Try LDAP operations in the LDAP client
 
 Run the LDAP server as follows:
 ```sh

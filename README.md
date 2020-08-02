@@ -42,7 +42,7 @@ directory /var/lib/openldap/openldap-data
 
 suffix  "SUFFIX"
 rootdn  "ROOT_DN"
-rootpw  ROOT_DN_PW
+rootpw  ROOT_DN_PW(hashed)
 
 # Indices to maintain
 index objectClass eq

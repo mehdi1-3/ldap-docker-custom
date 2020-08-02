@@ -62,7 +62,7 @@ TLSCertificateKeyFile   PRIVKEY
 
 * If a container has `/etc/openldap/slapd.conf`, the container uses the existing file.
 * If a container does not have `/etc/openldap/slapd.conf`, the container generates `/etc/openldap/slapd.conf` and initialize it based on the given environments.
-* When an LDAP database is missing or when `/etc/openldap/slapd.conf` was initialized, a new LDAP database is generated in `/var/lib/openldap/openldap-data`.
+* If an LDAP database is missing, a new LDAP database is generated in `/var/lib/openldap/openldap-data`.
 
 ## Example
 
@@ -147,7 +147,7 @@ Enter an LDAP client as follows:
 docker-compose run ldap-client ash -c "echo 'TLS_REQCERT never' > /etc/openldap/ldap.conf; ash"
 ```
 
-Execute the following ldap operations.
+Execute the following LDAP operations.
 
 * ldapsearch
 ```sh

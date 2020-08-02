@@ -2,11 +2,13 @@
 
 LDAP_INIT="/ldap-init"
 SLAPD_CONF="/etc/openldap/slapd.conf"
+DATA_MDB="/var/lib/openldap/openldap-data/data.mdb"
 
 if [ -e "${SLAPD_CONF}" ]; then 
-    echo "${SLAPD_CONF} already exists."
+    echo "Initialization is skipped because ${SLAPD_CONF} already exists."
+    slaptest -u -f "${SLAPD_CONF}" || ( echo "Invalid configuration" && exit 1 )
 else
-    echo "Initialize ${SLAPD_CONF} and /var/lib/openldap/openldap-data/data.mdb"
+    echo "Initializing ${SLAPD_CONF}"
 
     cp -R /ldap-init/conf/* /etc/openldap/
 
@@ -30,7 +32,14 @@ else
         sed -i -e "s|^.*PRIVKEY.*$||g" "${SLAPD_CONF}"
     fi
 
-    slaptest -u -f "${SLAPD_CONF}"
+    slaptest -u -f "${SLAPD_CONF}" || ( echo "Invalid configuration" && exit 1 )
+
+    if [ -e "$DATA_MDB" ]; then
+        echo "$DATA_MDB cannot be initialized because it already exists."
+        exit 1
+    fi
+
+    echo "Initializing $DATA_MDB."
     rm -r /var/lib/openldap/openldap-data
     mkdir -p /var/lib/openldap/openldap-data
 
@@ -42,12 +51,6 @@ else
         | sed -e "s|SUFFIX_DC|${SUFFIX_DC}|g" \
         | sed -e "s|SUFFIX|${SUFFIX}|g" \
         | slapadd;
-    cat "${LDAP_INIT}/rootdn.ldif" \
-        | sed -e "s|ROOT_DN_CN|${ROOT_DN_CN}|g" \
-        | sed -e "s|ROOT_DN|${ROOT_DN}|g" \
-        | sed -e "s|SUFFIX_DC|${SUFFIX_DC}|g" \
-        | sed -e "s|SUFFIX|${SUFFIX}|g" \
-        | cat;
 fi
 
 echo "Start: slapd -h \"$LDAP_URIS $LDAPS_URIS\""

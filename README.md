@@ -61,7 +61,7 @@ TLSCertificateKeyFile   PRIVKEY
 ## Initialization
 
 * If a container has `/etc/openldap/slapd.conf`, the container uses the existing file.
-* If a container does not have `/etc/openldap/slapd.conf`, the container generates `/etc/openldap/slapd.conf` and initialize it based on the given environments.
+* If a container does not have `/etc/openldap/slapd.conf`, the container generates `/etc/openldap/slapd.conf` and initializes it based on the given environments.
 * If an LDAP database is missing, a new LDAP database is generated in `/var/lib/openldap/openldap-data`.
 
 ## Example

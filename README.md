@@ -17,7 +17,7 @@ A docker image of LDAP server and LDAP client based on openldap.
 
 * `ROOT_DN_PW` is hashed and stored in `/etc/openldap/slapd.conf`.
 * At least one or more URIs must be given by `LDAP_URIS` or `LDAPS_URIS`
-* If `LDAPS_URIS`, `CERT` and `PRIVKEY` are given, TLS is enabled; otherwise, TLS is disabled.
+* If `LDAPS_URIS`, `CERT`, and `PRIVKEY` are given, TLS is enabled; otherwise, TLS is disabled.
 
 With the above environments, the container will generate the following `/etc/openldap/slapd.conf`.
 ```conf
@@ -66,14 +66,14 @@ TLSCertificateKeyFile   PRIVKEY
 
 ## Example
 
-### Prepare self signed certificate
+### Prepare self-signed certificate
 
 Enter a docker container that contains openssl.
 ```sh
 docker run -it -v $(pwd)/certificates:/certificates jumpaku/openssl-docker bash
 ```
 
-Generate a self signed certificate using openssl.
+Generate a self-signed certificate using openssl.
 ```sh
 CERT_PATH=/certificates
 SERVER_NAME=ldap-server
@@ -109,7 +109,7 @@ services:
 
   ldap-client:
     image: 'jumpaku/ldap-docker'
-    # Set TLS_REQCERT never, to use a self signed cetificate. Be careful spelling.
+    # Set TLS_REQCERT never, to use a self-signed cetificate. Be careful spelling.
     command: ["ash", "-c", "echo 'TLS_REQCERT never' > /etc/openldap/ldap.conf; ash"]
     environment:
       - "BIND_DN_PW=ldap_rootdn_pw"

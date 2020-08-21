@@ -9,7 +9,7 @@ A docker image of LDAP server and LDAP client based on openldap.
 | `ROOT_DN_PW`|                 | yes      | password for rootdn  |
 | `ROOT_DN`   |                 | yes      | rootdn |
 | `SUFFIX`    |                 | yes      | suffix |
-| `LDAP_URIS` | `ldaps:///`     | no       | LDAP URIs without TLS |
+| `LDAP_URIS` | `ldap:///`     | no       | LDAP URIs without TLS |
 | `LDAPS_URIS`| ` `             | no       | LDAP URIs using TLS |
 | `CERT`      | ` `             | no       | path to certificate |
 | `PRIVKEY`   | ` `             | no       | path to private key|

@@ -1,10 +1,4 @@
-# entry for suffix
-dn: SUFFIX
-objectClass: domain
-objectClass: dcObject
-dc: SUFFIX_DC
-
-# entry for rootdn
-dn: ROOT_DN
-objectClass: organizationalRole
-cn: ROOT_DN_CN
+dn: olcDatabase={0}config,cn=config
+changetype: modify
+replace: olcRootPW
+olcRootPW: secret

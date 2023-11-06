@@ -12,6 +12,7 @@ else
 
     cp -R /ldap-init/conf/* /etc/openldap/
 
+
     sed -i "s|ROOT_DN_PW|$(slappasswd -s ${ROOT_DN_PW})|" "${SLAPD_CONF}"
     sed -i "s|ROOT_DN|${ROOT_DN}|g" "${SLAPD_CONF}"
     sed -i "s|SUFFIX|${SUFFIX}|g" "${SLAPD_CONF}"
@@ -40,18 +41,20 @@ else
     fi
 
     echo "Initializing $DATA_MDB."
-    #rm -r /var/lib/openldap/openldap-data
+    rm -r /var/lib/openldap/openldap-data
     mkdir -p /var/lib/openldap/openldap-data
+    cp -R /ldap-init/data/* /var/lib/openldap/openldap-data
+    chown -R openldap:openldap /var/lib/openldap/openldap-data
 
-    ROOT_DN_CN=$(echo "${ROOT_DN}" | awk -F "," '{ print $1 }' | sed -e "s|^.*=||g")
-    SUFFIX_DC=$(echo "${SUFFIX}" | awk -F "," '{ print $1 }' | sed -e "s|^.*=||g")
-    cat "${LDAP_INIT}/rootdn.ldif" \
-        | sed -e "s|ROOT_DN_CN|${ROOT_DN_CN}|g" \
-        | sed -e "s|ROOT_DN|${ROOT_DN}|g" \
-        | sed -e "s|SUFFIX_DC|${SUFFIX_DC}|g" \
-        | sed -e "s|SUFFIX|${SUFFIX}|g" \
-        | slapadd;
-fi
+    #ROOT_DN_CN=$(echo "${ROOT_DN}" | awk -F "," '{ print $1 }' | sed -e "s|^.*=||g")
+    #SUFFIX_DC=$(echo "${SUFFIX}" | awk -F "," '{ print $1 }' | sed -e "s|^.*=||g")
+    #cat "${LDAP_INIT}/rootdn.ldif" \
+        #| sed -e "s|ROOT_DN_CN|${ROOT_DN_CN}|g" \
+        #| sed -e "s|ROOT_DN|${ROOT_DN}|g" \
+        #| sed -e "s|SUFFIX_DC|${SUFFIX_DC}|g" \
+        #| sed -e "s|SUFFIX|${SUFFIX}|g" \
+        #| slapadd;
+#fi
 
 echo "Start: slapd -h \"$LDAP_URIS $LDAPS_URIS\""
 slapd -h "$LDAP_URIS $LDAPS_URIS" -d 256

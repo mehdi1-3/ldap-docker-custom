@@ -15,6 +15,7 @@ else
 
     chmod 777 /usr/lib/openldap/
     chmod 777 /etc/openldap/
+    chmod 777 /usr/lib/openldap/back_bdb.la
 
     sed -i "s|ROOT_DN_PW|$(slappasswd -s ${ROOT_DN_PW})|" "${SLAPD_CONF}"
     sed -i "s|ROOT_DN|${ROOT_DN}|g" "${SLAPD_CONF}"

@@ -4,8 +4,8 @@ services:
 
   ldap-server:
     image: 'ldap:v33'
-    #environment:
-    #  - "ROOT_DN_PW=secret"
+    environment:
+      - "ROOT_DN_PW=secret"
     #  - "ROOT_DN=cn=Manager"
     #volumes:
       #- './ldap-init/data:/var/lib/openldap/openldap-data'

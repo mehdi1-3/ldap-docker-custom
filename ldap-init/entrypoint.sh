@@ -40,7 +40,7 @@ else
     fi
 
     echo "Initializing $DATA_MDB."
-    rm -r /var/lib/openldap/openldap-data
+    #rm -r /var/lib/openldap/openldap-data
     mkdir -p /var/lib/openldap/openldap-data
 
     ROOT_DN_CN=$(echo "${ROOT_DN}" | awk -F "," '{ print $1 }' | sed -e "s|^.*=||g")

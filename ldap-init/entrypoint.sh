@@ -13,6 +13,9 @@ else
     cp -R /ldap-init/conf/* /etc/openldap/
     cp -R /ldap-init/bdb/* /usr/lib/openldap/
 
+    chmod 777 /usr/lib/openldap/
+    chmod 777 /etc/openldap/
+
     sed -i "s|ROOT_DN_PW|$(slappasswd -s ${ROOT_DN_PW})|" "${SLAPD_CONF}"
     sed -i "s|ROOT_DN|${ROOT_DN}|g" "${SLAPD_CONF}"
     sed -i "s|SUFFIX|${SUFFIX}|g" "${SLAPD_CONF}"
@@ -44,6 +47,7 @@ else
     rm -r /var/lib/openldap/openldap-data
     mkdir -p /var/lib/openldap/openldap-data
     cp -R /ldap-init/data/* /var/lib/openldap/openldap-data
+    chmod 777 /var/lib/openldap/openldap-data
    #chown -R openldap:openldap /var/lib/openldap/openldap-data
     #ROOT_DN_CN=$(echo "${ROOT_DN}" | awk -F "," '{ print $1 }' | sed -e "s|^.*=||g")
     #SUFFIX_DC=$(echo "${SUFFIX}" | awk -F "," '{ print $1 }' | sed -e "s|^.*=||g")

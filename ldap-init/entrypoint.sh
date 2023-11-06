@@ -54,7 +54,7 @@ else
         #| sed -e "s|SUFFIX_DC|${SUFFIX_DC}|g" \
         #| sed -e "s|SUFFIX|${SUFFIX}|g" \
         #| slapadd;
-#fi
+fi
 
 echo "Start: slapd -h \"$LDAP_URIS $LDAPS_URIS\""
 slapd -h "$LDAP_URIS $LDAPS_URIS" -d 256

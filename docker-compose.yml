@@ -7,8 +7,8 @@ services:
     #environment:
     #  - "ROOT_DN_PW=secret"
     #  - "ROOT_DN=cn=Manager"
-    volumes:
-      - './ldap-init/data:/var/lib/openldap/openldap-data'
+    #volumes:
+      #- './ldap-init/data:/var/lib/openldap/openldap-data'
       #- './conf/:/etc/openldap' 
       #- './certificates:/certificates'
     ports:

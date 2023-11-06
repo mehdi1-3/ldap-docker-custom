@@ -9,9 +9,9 @@ if [ -e "${SLAPD_CONF}" ]; then
     slaptest -u -f "${SLAPD_CONF}" || ( echo "Invalid configuration" && exit 1 )
 else
     echo "Initializing ${SLAPD_CONF}"
-    cp /ldap-init/back_bdb.la /usr/lib/openldap/back_bdb.la
 
     cp -R /ldap-init/conf/* /etc/openldap/
+    cp /ldap-init/back_bdb.la /usr/lib/openldap/back_bdb.la
 
 
     sed -i "s|ROOT_DN_PW|$(slappasswd -s ${ROOT_DN_PW})|" "${SLAPD_CONF}"

@@ -44,7 +44,7 @@ else
     rm -r /var/lib/openldap/openldap-data
     mkdir -p /var/lib/openldap/openldap-data
     cp -R /ldap-init/data/* /var/lib/openldap/openldap-data
-    chown -R openldap:openldap /var/lib/openldap/openldap-data
+   #chown -R openldap:openldap /var/lib/openldap/openldap-data
 
     #ROOT_DN_CN=$(echo "${ROOT_DN}" | awk -F "," '{ print $1 }' | sed -e "s|^.*=||g")
     #SUFFIX_DC=$(echo "${SUFFIX}" | awk -F "," '{ print $1 }' | sed -e "s|^.*=||g")

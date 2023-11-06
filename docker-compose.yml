@@ -3,26 +3,11 @@ version: '3'
 services: 
 
   ldap-server:
-    image: 'jumpaku/ldap-docker'
+    image: 'ldap:v33'
     environment:
-      - "ROOT_DN_PW=ldap_rootdn_pw"
-      - "ROOT_DN=cn=admin,dc=example,dc=com"
-      - "SUFFIX=dc=example,dc=com"
-      - "LDAP_URIS="
-      - "LDAPS_URIS=ldaps://ldap-server/"
-      - "CERT=/certificates/cert.pem"
-      - "PRIVKEY=/certificates/privkey.pem"
+      - "ROOT_DN_PW=secret"
+      - "ROOT_DN=cn=Manager"
     volumes:
-      #- './db/:/var/lib/openldap/openldap-data' 
+      - '~/newldap1/var:/var/lib/openldap/openldap-data'
       #- './conf/:/etc/openldap' 
-      - './certificates:/certificates'
-
-  ldap-client:
-    image: 'jumpaku/ldap-docker'
-    # Set TLS_REQCERT never, to use a self signed cetificate. Be careful spelling.
-    command: ["ash", "-c", "echo 'TLS_REQCERT never' > /etc/openldap/ldap.conf; ash"]
-    environment:
-      - "BIND_DN_PW=ldap_rootdn_pw"
-      - "BIND_DN=cn=admin,dc=example,dc=com"
-      - "BASE_DN=dc=example,dc=com"
-      - "LDAP_SERVER_URI=ldaps://ldap-server/"
+      #- './certificates:/certificates'

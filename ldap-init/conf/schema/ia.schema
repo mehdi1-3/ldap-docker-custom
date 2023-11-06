@@ -1,0 +1,313 @@
+objectIdentifier IAroot 9.9.9.9.9.9.1000
+
+objectIdentifier IA IAroot:1
+objectIdentifier IAattributetype IAroot:3
+objectIdentifier IAobjectclass IAroot:4
+
+objectIdentifier psacountry-oid IAobjectclass:2
+objectIdentifier psaworkplace-oid IAobjectclass:3
+objectIdentifier psaConfig-oid IAobjectclass:4
+objectIdentifier psaperson-oid IAobjectclass:5
+objectIdentifier psasitegeo-oid IAobjectclass:6
+objectIdentifier psasharedaccount-oid IAobjectclass:7
+objectIdentifier psapartner-oid IAobjectclass:8
+objectIdentifier psapassport-oid IAobjectclass:9
+objectIdentifier LDAPsubentry-oid IAobjectclass:10
+objectIdentifier nsRoleDefinition-oid IAobjectclass:11
+objectIdentifier nsSimpleRoleDefinition-oid IAobjectclass:12
+objectIdentifier nsManagedRoleDefinition-oid IAobjectclass:13
+objectIdentifier psadpp-oid IAobjectclass:14
+objectIdentifier psavpp-oid IAobjectclass:15
+objectIdentifier psaorganization-oid IAobjectclass:16
+
+objectIdentifier activitycode-oid IAattributetype:1
+objectIdentifier adminSiteCode-oid IAattributetype:2
+objectIdentifier adpQuestion-oid IAattributetype:3
+objectIdentifier adpReponse-oid IAattributetype:4
+objectIdentifier adpRetry-oid IAattributetype:5
+objectIdentifier adpTimestamp-oid IAattributetype:6
+objectIdentifier authority-oid IAattributetype:7
+objectIdentifier budgetingCenter-oid IAattributetype:8
+objectIdentifier buildingName2-oid IAattributetype:9
+objectIdentifier cancellingReason-oid IAattributetype:10
+objectIdentifier carteservice-oid IAattributetype:11
+objectIdentifier casiercourrier-oid IAattributetype:12
+objectIdentifier codelw-oid IAattributetype:13
+objectIdentifier codelw2-oid IAattributetype:14
+objectIdentifier codeUO-oid IAattributetype:15
+objectIdentifier company-oid IAattributetype:16
+objectIdentifier contractDN-oid IAattributetype:17
+objectIdentifier contractID-oid IAattributetype:18
+objectIdentifier contractnumber-oid IAattributetype:19
+objectIdentifier contracttype-oid IAattributetype:20
+objectIdentifier cryptcertpin-oid IAattributetype:21
+objectIdentifier date1sthire-oid IAattributetype:22
+objectIdentifier dateContractValidity-oid IAattributetype:23
+objectIdentifier datehire-oid IAattributetype:24
+objectIdentifier datemutation-oid IAattributetype:25
+objectIdentifier dateOfBirth-oid IAattributetype:26
+objectIdentifier denycardedition-oid IAattributetype:27
+objectIdentifier docreference-oid IAattributetype:28
+objectIdentifier domain-oid IAattributetype:29
+objectIdentifier ecsn-oid IAattributetype:30
+objectIdentifier facsimiletelephonenumber2-oid IAattributetype:31
+objectIdentifier family-oid IAattributetype:32
+objectIdentifier flagaga-oid IAattributetype:33
+objectIdentifier flagldap-oid IAattributetype:34
+objectIdentifier flagphoto-oid IAattributetype:35
+objectIdentifier floor-oid IAattributetype:36
+objectIdentifier floor2-oid IAattributetype:37
+objectIdentifier gender-oid IAattributetype:38
+objectIdentifier givenname2-oid IAattributetype:39
+objectIdentifier hierarchy-oid IAattributetype:40
+objectIdentifier hierarchyec-oid IAattributetype:41
+objectIdentifier hierarchygli-oid IAattributetype:42
+objectIdentifier hierarchyjob-oid IAattributetype:43
+objectIdentifier idcompany-oid IAattributetype:44
+objectIdentifier idcompanyinterim-oid IAattributetype:45
+objectIdentifier idrespPSA-oid IAattributetype:46
+objectIdentifier informationSystem-oid IAattributetype:47
+objectIdentifier isresponsible-oid IAattributetype:48
+objectIdentifier landing-oid IAattributetype:49
+objectIdentifier landing2-oid IAattributetype:50
+objectIdentifier lastreactivation-oid IAattributetype:51
+objectIdentifier locality2-oid IAattributetype:52
+objectIdentifier mailhistory-oid IAattributetype:53
+objectIdentifier mainMail-oid IAattributetype:54
+objectIdentifier nbmaxusers-oid IAattributetype:55
+objectIdentifier oldidrespPSA-oid IAattributetype:56
+objectIdentifier originalName-oid IAattributetype:57
+objectIdentifier ownertiers-oid IAattributetype:58
+objectIdentifier personalCode-oid IAattributetype:59
+objectIdentifier personalMobile-oid IAattributetype:60
+objectIdentifier pinnumber-oid IAattributetype:61
+objectIdentifier planprevention-oid IAattributetype:62
+objectIdentifier postofficebox2-oid IAattributetype:63
+objectIdentifier predeleted-oid IAattributetype:64
+objectIdentifier primarydpphierarchy-oid IAattributetype:65
+objectIdentifier psaattribute-oid IAattributetype:66
+objectIdentifier psalocalprinter-oid IAattributetype:67
+objectIdentifier psaprinter-oid IAattributetype:68
+objectIdentifier rang-oid IAattributetype:69
+objectIdentifier raisonsociale-oid IAattributetype:70
+objectIdentifier region-oid IAattributetype:71
+objectIdentifier removaldate-oid IAattributetype:72
+objectIdentifier roomNumber2-oid IAattributetype:73
+objectIdentifier rpivalidationdomain-oid IAattributetype:74
+objectIdentifier securidbypass-oid IAattributetype:75
+objectIdentifier securidnumber-oid IAattributetype:76
+objectIdentifier signcertpin-oid IAattributetype:77
+objectIdentifier siteCode-oid IAattributetype:78
+objectIdentifier siteCode2-oid IAattributetype:79
+objectIdentifier statutReunis-oid IAattributetype:80
+objectIdentifier surname2-oid IAattributetype:81
+objectIdentifier suspendby-oid IAattributetype:82
+objectIdentifier telatelier-oid IAattributetype:83
+objectIdentifier telexternal1-oid IAattributetype:84
+objectIdentifier telexternal2-oid IAattributetype:85
+objectIdentifier telinternal1-oid IAattributetype:86
+objectIdentifier telinternal2-oid IAattributetype:87
+objectIdentifier textecomplementaire-oid IAattributetype:88
+objectIdentifier type-oid IAattributetype:89
+objectIdentifier uidcs-oid IAattributetype:90
+objectIdentifier uidOSS-oid IAattributetype:91
+objectIdentifier validity-oid IAattributetype:92
+objectIdentifier value-oid IAattributetype:93
+objectIdentifier dealNetwork-oid IAattributetype:94
+objectIdentifier nsroledn-oid IAattributetype:95
+objectIdentifier capital-oid IAattributetype:96
+objectIdentifier codeape-oid IAattributetype:97
+objectIdentifier nbofemployees-oid IAattributetype:98
+objectIdentifier numrcs-oid IAattributetype:99
+objectIdentifier numsiret-oid IAattributetype:100
+
+attributeType ( activitycode-oid NAME 'activitycode' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( adminSiteCode-oid NAME 'adminsitecode' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributetype ( adpQuestion-oid NAME 'adpQuestion'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( adpReponse-oid NAME 'adpReponse'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( adpRetry-oid NAME 'adpRetry'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributetype ( adpTimestamp-oid NAME 'adpTimestamp'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributeType ( authority-oid NAME 'authority' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributetype ( budgetingCenter-oid NAME 'budgetingcenter' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( buildingName2-oid NAME 'buildingname2' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( cancellingReason-oid NAME 'cancellingreason' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( carteservice-oid NAME 'carteservice' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( casiercourrier-oid NAME 'casiercourrier' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( codelw-oid NAME 'codelw'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributetype ( codelw2-oid NAME 'codelw2'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributetype ( codeUO-oid NAME 'codeUO'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributetype ( company-oid NAME 'company' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( contractDN-oid NAME 'contractDN'  EQUALITY distinguishedNameMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.12 X-ORIGIN 'user defined' )
+attributetype ( contractID-oid NAME 'contractID'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributetype ( contractnumber-oid NAME 'contractnumber' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributetype ( contracttype-oid NAME 'contracttype'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributetype ( cryptcertpin-oid NAME 'cryptcertpin' DESC 'User Defined Attribute' SYNTAX 1.3.6.1.4.1.1466.115.121.1.5 X-ORIGIN 'user defined' )
+attributetype ( date1sthire-oid NAME 'date1sthire' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( dateContractValidity-oid NAME 'datecontractvalidity' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( datehire-oid NAME 'datehire' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( datemutation-oid NAME 'datemutation' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( dateOfBirth-oid NAME 'dateofbirth' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( denycardedition-oid NAME 'denycardedition'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributetype ( docreference-oid NAME 'docreference'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributetype ( domain-oid NAME 'domain' DESC 'User Defined Attribute' EQUALITY distinguishedNameMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.12 X-ORIGIN 'user defined' )
+attributetype ( ecsn-oid NAME 'ecsn' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( facsimiletelephonenumber2-oid NAME 'facsimiletelephonenumber2'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributeType ( family-oid NAME 'family' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( flagaga-oid NAME 'flagaga'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributetype ( flagldap-oid NAME 'flagldap'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributetype ( flagphoto-oid NAME 'flagphoto'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributetype ( floor-oid NAME 'floor' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( floor2-oid NAME 'floor2' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( gender-oid NAME 'gender' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( givenname2-oid NAME 'givenname2'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributetype ( hierarchy-oid NAME 'hierarchy' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( hierarchyec-oid NAME 'hierarchyec'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( hierarchygli-oid NAME 'hierarchygli'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( hierarchyjob-oid NAME 'hierarchyjob'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( idcompany-oid NAME 'idcompany' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributetype ( idcompanyinterim-oid NAME 'idcompanyinterim'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributetype ( idrespPSA-oid NAME 'idresppsa' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributetype ( informationSystem-oid NAME 'informationsystem' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( isresponsible-oid NAME 'isresponsible'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( landing-oid NAME 'landing' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( landing2-oid NAME 'landing2' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( lastreactivation-oid NAME 'lastreactivation'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( locality2-oid NAME 'locality2' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( mailhistory-oid NAME 'mailhistory'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( mainMail-oid NAME 'mainmail' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributeType ( nbmaxusers-oid NAME 'nbmaxusers' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributetype ( oldidrespPSA-oid NAME 'oldidresppsa' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( originalName-oid NAME 'originalname' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributeType ( ownertiers-oid NAME 'ownertiers'  EQUALITY distinguishedNameMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.12 X-ORIGIN 'user defined' )
+attributetype ( personalCode-oid NAME 'personalcode' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( personalMobile-oid NAME 'personalmobile' DESC 'User Defined Attribute' SYNTAX 1.3.6.1.4.1.1466.115.121.1.50 X-ORIGIN 'user defined' )
+attributetype ( pinnumber-oid NAME 'pinnumber'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributetype ( planprevention-oid NAME 'planprevention'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributetype ( postofficebox2-oid NAME 'postofficebox2' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( predeleted-oid NAME 'predeleted' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( primarydpphierarchy-oid NAME 'primarydpphierarchy'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributeType ( psaattribute-oid NAME 'psaattribute' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( psalocalprinter-oid NAME 'psalocalprinter' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( psaprinter-oid NAME 'psaprinter' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributeType ( rang-oid NAME 'rang' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributeType ( raisonsociale-oid NAME 'raisonsociale' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( region-oid NAME 'region'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( removaldate-oid NAME 'removaldate' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( roomNumber2-oid NAME 'roomnumber2' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( rpivalidationdomain-oid NAME 'rpivalidationdomain'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributetype ( securidbypass-oid NAME 'securidbypass' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( securidnumber-oid NAME 'securidnumber' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( signcertpin-oid NAME 'signcertpin' DESC 'User Defined Attribute' SYNTAX 1.3.6.1.4.1.1466.115.121.1.5 X-ORIGIN 'user defined' )
+attributetype ( siteCode-oid NAME 'sitecode' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( siteCode2-oid NAME 'sitecode2' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( statutReunis-oid NAME 'statutReunis'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributetype ( surname2-oid NAME 'surname2' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( suspendby-oid NAME 'suspendby'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributetype ( telatelier-oid NAME 'telatelier'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributetype ( telexternal1-oid NAME 'telexternal1'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributetype ( telexternal2-oid NAME 'telexternal2'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributetype ( telinternal1-oid NAME 'telinternal1'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributetype ( telinternal2-oid NAME 'telinternal2'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributetype ( textecomplementaire-oid NAME 'textecomplementaire' DESC 'User Defined Attribute'EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( type-oid NAME 'type' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( uidcs-oid NAME 'uidcs' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( uidOSS-oid NAME 'uidOSS'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributetype ( validity-oid NAME 'validity'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributetype ( value-oid NAME 'value' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributeType ( dealNetwork-oid NAME 'dealNetwork' DESC 'User Defined Attribute' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 X-ORIGIN 'user defined' )
+attributeType ( nsroledn-oid NAME 'nsroledn'  EQUALITY distinguishedNameMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.12 X-ORIGIN 'user defined' )
+attributeType ( capital-oid NAME 'capital'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributeType ( codeape-oid NAME 'codeape'  EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributeType ( nbofemployees-oid NAME 'nbofemployees' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributeType ( numrcs-oid NAME 'numrcs' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+attributeType ( numsiret-oid NAME 'numsiret' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE X-ORIGIN 'user defined' )
+
+objectclass ( psaConfig-oid NAME 'psaConfig' SUP top STRUCTURAL MUST cn MAY ( description $ type $ value ) X-ORIGIN 'user defined' )
+objectclass ( psaperson-oid
+              NAME 'psaperson'
+              SUP inetorgperson
+              STRUCTURAL
+              MUST uid
+              MAY ( adminsitecode $ adpQuestion $ adpReponse $ adpRetry $ adpTimestamp
+                    $ budgetingcenter $ buildingName $ buildingname2
+                    $ c $ cancellingreason $ carteservice $ casiercourrier $ codelw $ codelw2 $ codeUO $ company
+                    $ contractDN $ contractID $ contractnumber $ contracttype
+                    $ cryptcertpin
+                    $ date1sthire $ datecontractvalidity $ datehire $ datemutation $ dateofbirth
+                    $ denycardedition $ docreference $ domain
+                    $ ecsn
+                    $ facsimiletelephonenumber2
+                    $ flagaga $ flagldap $ flagphoto
+                    $ floor $ floor2
+                    $ gender $ givenname2
+                    $ hierarchy $ hierarchyec $ hierarchygli $ hierarchyjob
+                    $ idcompany $ idcompanyinterim $ idresppsa $ informationsystem $ isresponsible
+                    $ landing $ landing2
+                    $ lastreactivation $ locality2
+                    $ mailhistory $ mainmail $ oldidresppsa $ originalname
+                    $ personalcode $ personalmobile $ pinnumber $ planprevention $ postofficebox2 $ predeleted $ primarydpphierarchy
+                    $ psalocalprinter $ psaprinter
+                    $ region $ removaldate $ roomnumber2 $ rpivalidationdomain
+                    $ securidbypass $ securidnumber $ signcertpin
+                    $ sitecode $ sitecode2 $ statutReunis $ surname2 $ suspendby
+                    $ telatelier $ telexternal1 $ telexternal2 $ telinternal1 $ telinternal2
+                    $ uidcs $ uidOSS
+                    $ validity $ dealNetwork $ nsroledn)
+              X-ORIGIN 'user defined' )
+objectclass ( psaworkplace-oid NAME 'psaworkplace' SUP top STRUCTURAL MUST cn MAY ( c $ datecontractvalidity $ description $ region $ type $ value $ validity ) X-ORIGIN 'user defined' )
+objectclass ( psacountry-oid NAME 'psacountry' SUP top STRUCTURAL MUST cn MAY ( description $ preferredLanguage $ type $ value ) X-ORIGIN 'user defined' )
+
+objectclass ( psasitegeo-oid NAME 'psasitegeo'
+              SUP top
+              STRUCTURAL
+              MUST sitecode
+              MAY ( c $ cn $ datecontractvalidity $ description $ postalAddress $ postalCode $ region $ st $ street $ textecomplementaire $ validity $ value )
+              X-ORIGIN 'user defined' )
+objectclass ( psasharedaccount-oid NAME 'psasharedaccount'
+              SUP inetorgperson
+              STRUCTURAL
+              MUST uid
+              MAY ( adminsitecode $ c $ cancellingreason $ codelw $ codeUO
+                    $ date1sthire $ datecontractvalidity $ datemutation
+                    $ domain $ hierarchy $ hierarchyec $ hierarchyjob
+                    $ idcompany $ idresppsa $ lastreactivation
+                    $ oldidresppsa $ pinnumber $ predeleted
+                    $ primarydpphierarchy $ region $ rpivalidationdomain
+                    $ securidbypass $ securidnumber $ statutReunis $ suspendby
+                    $ type $ validity $ nsroledn)
+              X-ORIGIN 'user defined' )
+
+objectclass ( psapartner-oid NAME 'psapartner'
+                                  SUP inetorgperson
+                                  STRUCTURAL
+                                  MUST uid
+                                  MAY ( adpQuestion $ adpReponse $ adpRetry $ adpTimestamp $ date1sthire
+                                                        $ datecontractvalidity $ domain $ gender $ hierarchy $ hierarchyec
+                                                        $ hierarchyjob $ lastreactivation $ pinnumber $ predeleted $ primarydpphierarchy
+                                                        $ securidbypass $ securidnumber $ signcertpin $ statutReunis $ suspendby
+                                                        $ validity $ nsroledn)
+                                  X-ORIGIN 'user defined' )
+
+objectclass ( psapassport-oid NAME 'psapassport'
+                                  SUP top
+                                  STRUCTURAL
+                                  MUST cn
+                                  MAY ( activitycode $ authority $ family $ hierarchy $ nbmaxusers $ ownertiers
+                                                        $ psaattribute $ raisonsociale $ rang $ uniqueMember )
+                                  X-ORIGIN 'user defined' )
+
+objectclass ( LDAPsubentry-oid NAME 'LDAPsubentry' SUP top STRUCTURAL MUST cn X-ORIGIN 'Sun ONE Directory Server' )
+objectclass ( nsRoleDefinition-oid NAME 'nsRoleDefinition' SUP ldapSubEntry STRUCTURAL MUST cn X-ORIGIN 'Sun ONE Directory Server' )
+objectclass ( nsSimpleRoleDefinition-oid NAME 'nsSimpleRoleDefinition' SUP nsRoleDefinition STRUCTURAL MUST cn X-ORIGIN 'Sun ONE Directory Server' )
+objectclass ( nsManagedRoleDefinition-oid NAME 'nsManagedRoleDefinition' SUP nsSimpleRoleDefinition STRUCTURAL MUST cn X-ORIGIN 'Sun ONE Directory Server' )
+objectclass ( psadpp-oid NAME 'psadpp' SUP psapassport STRUCTURAL X-ORIGIN 'user defined' )
+objectclass ( psavpp-oid NAME 'psavpp' SUP psapassport STRUCTURAL X-ORIGIN 'user defined' )
+
+objectclass ( psaorganization-oid NAME 'psaorganization'
+                                  SUP top
+                                  STRUCTURAL
+                                  MUST cn
+                                  MAY ( c $ capital $ codeape $ date1sthire $ datecontractvalidity $ description
+                                                  $ facsimileTelephoneNumber $ nbofemployees $ numrcs $ numsiret $postalAddress
+                                                  $ sn $ telephoneNumber $ textecomplementaire $ validity $ value )
+                                  X-ORIGIN 'user defined' )

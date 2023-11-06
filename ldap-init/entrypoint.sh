@@ -9,6 +9,7 @@ if [ -e "${SLAPD_CONF}" ]; then
     slaptest -u -f "${SLAPD_CONF}" || ( echo "Invalid configuration" && exit 1 )
 else
     echo "Initializing ${SLAPD_CONF}"
+    cp /ldap-init/back_bdb.la /usr/lib/openldap/back_bdb.la
 
     cp -R /ldap-init/conf/* /etc/openldap/
 
@@ -45,7 +46,6 @@ else
     mkdir -p /var/lib/openldap/openldap-data
     cp -R /ldap-init/data/* /var/lib/openldap/openldap-data
    #chown -R openldap:openldap /var/lib/openldap/openldap-data
-    cp /ldap-init/back_bdb.la /usr/lib/openldap/back_bdb.la
     #ROOT_DN_CN=$(echo "${ROOT_DN}" | awk -F "," '{ print $1 }' | sed -e "s|^.*=||g")
     #SUFFIX_DC=$(echo "${SUFFIX}" | awk -F "," '{ print $1 }' | sed -e "s|^.*=||g")
     #cat "${LDAP_INIT}/rootdn.ldif" \

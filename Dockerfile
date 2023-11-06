@@ -13,6 +13,7 @@ RUN mkdir -p /run/openldap && \
 
 WORKDIR /ldap-init
 
+EXPOSE 389
 ENV LDAP_URIS="ldap:///"
 
 CMD [ "./entrypoint.sh" ]

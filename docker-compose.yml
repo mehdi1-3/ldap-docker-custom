@@ -8,6 +8,6 @@ services:
       - "ROOT_DN_PW=secret"
       - "ROOT_DN=cn=Manager"
     volumes:
-      - '~/newldap1/var:/var/lib/openldap/openldap-data'
+      - '/home/admin/newldap1/var:/var/lib/openldap/openldap-data'
       #- './conf/:/etc/openldap' 
       #- './certificates:/certificates'

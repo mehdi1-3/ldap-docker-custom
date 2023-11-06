@@ -63,4 +63,4 @@ fi
 echo "Start: slapd -h \"$LDAP_URIS $LDAPS_URIS\""
 slapd -h "$LDAP_URIS $LDAPS_URIS" -d 256
 
-find / -name back_bdb.la
+find / -name *.la

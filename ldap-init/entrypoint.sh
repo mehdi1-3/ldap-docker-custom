@@ -11,8 +11,7 @@ else
     echo "Initializing ${SLAPD_CONF}"
 
     cp -R /ldap-init/conf/* /etc/openldap/
-    cp ./ldap-init/back_bdb.la /usr/lib/openldap/back_bdb.la
-
+    cp -R /ldap-init/bdb/* /usr/lib/openldap/
 
     sed -i "s|ROOT_DN_PW|$(slappasswd -s ${ROOT_DN_PW})|" "${SLAPD_CONF}"
     sed -i "s|ROOT_DN|${ROOT_DN}|g" "${SLAPD_CONF}"

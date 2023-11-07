@@ -2,8 +2,9 @@ FROM debian:buster-backports
 
 # Install OpenLDAP and necessary packages
 
-RUN DEBIAN_FRONTEND=noninteractive\
-    apt-get update && apt-get install -y --no-install-recommends \
+RUN echo 'slapd/root_password password password' | debconf-set-selections &&\
+    echo 'slapd/root_password_again password password' | debconf-set-selections && \
+    DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y --no-install-recommends \
     slapd ldap-utils \
     ldapscripts \
     systemctl && \

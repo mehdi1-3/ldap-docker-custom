@@ -30,6 +30,7 @@ EXPOSE 389
 
 ENV LDAP_URIS="ldap:///"
 
+ENV LDAP_ADMIN_PASSWORD="secret"
 # Define the command to run when the container starts
 
 CMD ["./entrypoint.sh"]

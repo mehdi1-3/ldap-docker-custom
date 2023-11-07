@@ -16,6 +16,8 @@
     ls /var/lib/ldap/
 
     chown -R openldap:openldap /var/lib/ldap
+    chown -R openldap:openldap /var/lib/sldap
+
 
     systemctl enable slapd.service
     systemctl restart slapd.service

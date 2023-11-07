@@ -13,7 +13,7 @@ spec:
         app: ldap
     spec:
       containers:
-        - name: ldap-server
+        - name: harbor.actia.local/test/ldap:v1
           image: ldap:v33
           ports:
             - containerPort: 389

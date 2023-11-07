@@ -22,3 +22,7 @@
 
     echo "ldap status"
     systemctl status slapd.service
+
+    slapd
+
+    /etc/init.d/slapd start

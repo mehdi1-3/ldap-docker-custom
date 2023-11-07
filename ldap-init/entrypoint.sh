@@ -23,3 +23,5 @@
     echo "ldap status"
     systemctl status slapd.service
 
+    sleep infinity
+

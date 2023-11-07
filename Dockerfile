@@ -3,8 +3,8 @@ FROM debian:buster-backports
 # Install OpenLDAP and necessary packages
 ENV LDAP_ADMIN_PASSWORD="secret"
 ENV LDAP_ADMIN_PASS="secret"
-RUN echo "slapd slapsd/internal/generated_adminpw password secret" | debconf-set-selections && \
-    apt-get update && apt-get install -y --no-install-recommends \
+ENV DEBiAN_FRONTEND=noninteractive
+RUN apt-get update && apt-get install -y --no-install-recommends \
     slapd ldap-utils \
     ldapscripts \
     systemctl && \

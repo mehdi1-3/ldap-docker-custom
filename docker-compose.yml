@@ -4,8 +4,5 @@ services:
 
   ldap-server:
     image: 'ldap:v33'
-    environment:
-      - "ROOT_DN_PW=secret"
-      - "ROOT_DN=cn=Manager"
     ports:
         - '389:389'

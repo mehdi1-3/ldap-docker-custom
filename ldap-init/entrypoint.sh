@@ -2,10 +2,6 @@
 
     systemctl enable slapd.service
     systemctl start slapd.service
-    chmod 777 /usr/lib/ldap/
-    chmod 777 /etc/ldap/
-    chmod 777 /var/lib/ldap/
-
 
     cp /ldap-init/conf/slapd.conf /etc/ldap/slapd.conf
     cp /ldap-init/conf/config.ldif  /etc/ldap/config.ldif

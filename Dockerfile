@@ -1,7 +1,8 @@
 FROM debian:buster-backports
 
 # Install OpenLDAP and necessary packages
-
+ENV LDAP_ADMIN_PASSWORD="secret"
+ENV LDAP_ADMIN_PASS="secret"
 RUN apt-get update && apt-get install -y --no-install-recommends \
     slapd ldap-utils \
     ldapscripts \
@@ -30,7 +31,6 @@ EXPOSE 389
 
 ENV LDAP_URIS="ldap:///"
 
-ENV LDAP_ADMIN_PASSWORD="secret"
 # Define the command to run when the container starts
 
 CMD ["./entrypoint.sh"]

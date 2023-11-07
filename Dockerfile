@@ -1,19 +1,39 @@
-FROM alpine:3.8
+FROM debian:buster-backports
 
-RUN apk --update add openldap openldap-back-mdb openldap-clients
+# Install OpenLDAP and necessary packages
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    slapd ldap-utils \
+    ldapscripts \
+    systemctl && \
+    rm -rf /var/lib/apt/lists/*
+
+# Copy LDAP initialization files to the container
 
 COPY ./ldap-init/ /ldap-init
 
-RUN mkdir -p /run/openldap && \
-    mkdir -p /etc/openldap/slapd.d && \
-    mkdir -p /var/lib/openldap/openldap-data && \
-    rm -r /etc/openldap/* && \
-    rm -r /var/lib/openldap/openldap-data/* && \
+# Create necessary directories and clean up
+
+RUN
+
+    rm -r /etc/ldap/slapd.d/ && \
+
+    rm -rf /var/lib/ldap/* && \
+
     chmod +x /ldap-init/entrypoint.sh
+
+# Set the working directory
 
 WORKDIR /ldap-init
 
+# Expose port 389 for LDAP
+
 EXPOSE 389
+
+# Set environment variable for LDAP URIs
+
 ENV LDAP_URIS="ldap:///"
 
-CMD [ "./entrypoint.sh" ]
+# Define the command to run when the container starts
+
+CMD ["./entrypoint.sh"]

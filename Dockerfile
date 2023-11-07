@@ -1,10 +1,9 @@
 FROM debian:buster-backports
 
 # Install OpenLDAP and necessary packages
-ENV LDAP_ADMIN_PASSWORD="secret"
-ENV LDAP_ADMIN_PASS="secret"
-ENV DEBiAN_FRONTEND=noninteractive
-RUN apt-get update && apt-get install -y --no-install-recommends \
+
+RUN DEBIAN_FRONTEND=noninteractive\
+    apt-get update && apt-get install -y --no-install-recommends \
     slapd ldap-utils \
     ldapscripts \
     systemctl && \

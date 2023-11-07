@@ -2,15 +2,15 @@
 
     systemctl enable slapd.service
     systemctl start slapd.service
-
+    chmod 777 /usr/lib/ldap/
+    chmod 777 /etc/ldap/
+    chmod 777 /var/lib/ldap/
+    chmod 777 /var/lib/ldap/schema/
 
     cp /ldap-init/conf/slapd.conf /etc/ldap/slapd.conf
     cp /ldap-init/conf/config.ldif  /etc/ldap/config.ldif
     cp /ldap-init/conf/schema/ia.schema /var/lib/ldap/schema/ia.schema
 
-    chmod 777 /usr/lib/ldap/
-    chmod 777 /etc/ldap/
-    chmod 777 /var/lib/ldap/
 
     echo "Initializing DATA."
     rm -rf /var/lib/ldap/*

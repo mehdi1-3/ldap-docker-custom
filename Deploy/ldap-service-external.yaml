@@ -9,5 +9,7 @@ spec:
   ports:
     - protocol: TCP
       port: 389
-      targetPort: 30389
+      targetPort: 389
+      nodePort: 30389
+
   type: NodePort

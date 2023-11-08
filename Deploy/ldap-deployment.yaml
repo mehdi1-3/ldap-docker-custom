@@ -18,3 +18,10 @@ spec:
           image: harbor.actia.local/test/ldap:v1
           ports:
             - containerPort: 389
+          volumeMounts:
+          - name: ldap-data
+            mountPath: /var/lib/ldap
+      volumes:
+      - name: ldap-data
+        persistentVolumeClaim:
+          claimName: ldap-pvc

@@ -15,7 +15,7 @@
     echo "ls /var/lib/ldap/"
     ls /var/lib/ldap/
 
-    #chown -R openldap:openldap /var/lib/ldap
+    chown -R openldap:openldap /var/lib/ldap
     chown -R openldap:openldap /var/lib/slapd
     systemctl enable slapd.service
     systemctl restart slapd.service

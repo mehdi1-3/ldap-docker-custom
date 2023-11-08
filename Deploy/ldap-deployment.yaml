@@ -19,9 +19,9 @@ spec:
           ports:
             - containerPort: 389
           volumeMounts:
-          - name: ldap-data
-            mountPath: /var/lib/ldap
+            - name: my-volume
+              mountPath: /var/lib/ldap
       volumes:
-      - name: ldap-data
-        persistentVolumeClaim:
-          claimName: ldap-pvc
+        - name: my-volume
+          hostPath:
+            path: /var/lib/ldap

@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ldap-deployment
+  namespace: das
 spec:
   replicas: 1
   selector:
@@ -13,7 +14,7 @@ spec:
         app: ldap
     spec:
       containers:
-        - name: harbor.actia.local/test/ldap:v1
-          image: ldap:v33
+        - name: ldap-server
+          image: harbor.actia.local/test/ldap:v1
           ports:
             - containerPort: 389

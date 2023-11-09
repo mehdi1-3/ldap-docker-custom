@@ -1,12 +1,14 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: ldap-pv
+  name: ldap-data-pv
   namespace: das
 spec:
   capacity:
-    storage: 5Gi
+    storage: 5Gi  # Adjust the size as needed
   accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce  # This is for single-node read-write access
+  persistentVolumeReclaimPolicy: Retain  # You can change this policy based on your needs
+  storageClassName: standard  # Storage class name, adjust as necessary
   hostPath:
-    path: /var/lib/ldap
+    path: /var/lib/ldap  # Replace with the host path where you want to store data

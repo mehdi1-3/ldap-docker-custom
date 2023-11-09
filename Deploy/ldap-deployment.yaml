@@ -23,5 +23,7 @@ spec:
               mountPath: /var/lib/ldap
       volumes:
         - name: my-volume
-          hostPath:
-            path: /var/lib/ldap
+          persistentVolumeClaim:
+            claimName: ldap-data-pvc
+          #hostPath:
+            #path: /var/lib/ldap

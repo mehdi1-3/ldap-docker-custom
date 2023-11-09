@@ -5,10 +5,10 @@ metadata:
   namespace: das
 spec:
   capacity:
-    storage: 5Gi  # Adjust the size as needed
+    storage: 5Gi
   accessModes:
-    - ReadWriteOnce  # This is for single-node read-write access
-  persistentVolumeReclaimPolicy: Retain  # You can change this policy based on your needs
-  storageClassName: standard  # Storage class name, adjust as necessary
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: standard
   hostPath:
-    path: /var/lib/ldap  # Replace with the host path where you want to store data
+    path: /var/lib/ldap

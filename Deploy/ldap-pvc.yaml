@@ -8,5 +8,5 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 5Gi  # Request the same size as your PV
+      storage: 5Gi
   storageClassName: standard

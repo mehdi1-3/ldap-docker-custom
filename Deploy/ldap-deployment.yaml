@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: ldap-server
-          image: harbor.actia.local/test/ldap:v1
+          image: harbor.actia.local/test/ldap:v2
           ports:
             - containerPort: 389
           volumeMounts:

@@ -1,5 +1,4 @@
 #!/bin/sh
-
     systemctl enable slapd.service
     systemctl start slapd.service
 

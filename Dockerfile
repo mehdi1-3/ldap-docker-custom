@@ -18,7 +18,7 @@ RUN rm -r /etc/ldap/slapd.d/ && \
     chmod +x /ldap-init/entrypoint.sh
 
 # Final stage
-FROM debian:buster-backports
+FROM gcr.io/distroless/static-debian10
 
 COPY --from=builder / /
 

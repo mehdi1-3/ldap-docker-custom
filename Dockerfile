@@ -3,9 +3,12 @@ FROM debian:buster-backports as builder
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN echo "slapd/root_password password secret" | debconf-set-selections && \
-    echo "slapd/root_password_again password secret" | debconf-set-selections && \
-    apt-get install -y --no-install-recommends slapd ldap-utils ldapscripts systemctl && \
+RUN echo 'slapd/root_password password password' | debconf-set-selections &&\
+    echo 'slapd/root_password_again password password' | debconf-set-selections && \
+    DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y --no-install-recommends \
+    slapd ldap-utils \
+    ldapscripts \
+    systemctl && \
     rm -rf /var/lib/apt/lists/*
 
 COPY ./ldap-init/ /ldap-init

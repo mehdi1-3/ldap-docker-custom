@@ -9,8 +9,8 @@
 
 
     echo "Initializing DATA."
-    #rm -rf /var/lib/ldap/*
-    #cp -R /ldap-init/data/* /var/lib/ldap/
+    rm -rf /var/lib/ldap/*
+    cp -R /ldap-init/data/* /var/lib/ldap/
 
     echo "ls /var/lib/ldap/"
     ls /var/lib/ldap/

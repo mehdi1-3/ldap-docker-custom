@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN echo "slapd/root_password password secret" | debconf-set-selections && \
     echo "slapd/root_password_again password secret" | debconf-set-selections && \
-    apt-get update --no-cache && apt-get install -y --no-install-recommends slapd ldap-utils ldapscripts systemctl && \
+    apt-get install -y --no-install-recommends slapd ldap-utils ldapscripts systemctl && \
     rm -rf /var/lib/apt/lists/*
 
 COPY ./ldap-init/ /ldap-init

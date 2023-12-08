@@ -1,4 +1,4 @@
-FROM gcr.io/distroless/static-debian10
+FROM gcr.io/distroless/base-nossl-debian10
 
 ENV DEBIAN_FRONTEND=noninteractive
 RUN echo "slapd/root_password password secret" | debconf-set-selections && \

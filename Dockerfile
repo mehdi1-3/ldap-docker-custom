@@ -28,8 +28,5 @@ EXPOSE 389
 
 ENV LDAP_URIS="ldap:///"
 
-# Use a non-root user
-RUN useradd -ms /bin/bash openldap
-USER openldap
 
 CMD ["./entrypoint.sh"]

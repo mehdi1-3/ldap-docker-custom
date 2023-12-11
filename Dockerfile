@@ -15,7 +15,6 @@ COPY ./ldap-init/ /ldap-init
 
 RUN rm -r /etc/ldap/slapd.d/ && \
     ###rm -rf /var/lib/ldap/* && \
-    ###rm -rf /var/lib/ldap/* && \
     chmod +x /ldap-init/entrypoint.sh
 
 # Set the working directory

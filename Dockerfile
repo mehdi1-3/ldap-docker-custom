@@ -1,4 +1,4 @@
-FROM gcr.io/distroless/base-nossl-debian10
+FROM debian:buster-backports
 
 ENV DEBIAN_FRONTEND=noninteractive
 RUN echo "slapd/root_password password secret" | debconf-set-selections && \
@@ -14,7 +14,8 @@ COPY ./ldap-init/ /ldap-init
 # Create necessary directories and clean up
 
 RUN rm -r /etc/ldap/slapd.d/ && \
-    rm -rf /var/lib/ldap/* && \
+    ###rm -rf /var/lib/ldap/* && \
+    ###rm -rf /var/lib/ldap/* && \
     chmod +x /ldap-init/entrypoint.sh
 
 # Set the working directory
